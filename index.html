@@ -4,8 +4,85 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
+    <header id="home">
+        <div class="menu-background">
+            <nav>
+                <ul class="main-menu">
+                  <li><a href="#contact">Contact information</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#code-example">Code examples</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#english">Education</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <img src="assets/photo.jpg" alt="my avatar">
+        </div>
+    <h1>Egor Vikhorev</h1>
+    <h2 id="contact">Contact information</h2>
+    <ul class="contact">
+        <li><span>Address:</span> Belarus, Minsk</li>
+        <li><span>E-mail:</span> egorvikh31@gmail.com</li>
+        <li><span>Discord:</span> @yyu#6981</li>
+    </ul>
+    <h2 id="about">About me</h2>
+    <p>I would like to learn JavaScript and become a junior
+        frontend developer after graduation of this course.
+        I am purposeful, sociable, interested in self-development
+        and improvement of professional skills.
+    </p>
+    <h2 id="skills">Skills</h2>
+    <ul>
+        <li>C#, Python</li>
+        <li>Git, Github</li>
+        <li>MySQL</li>
+        <li>VS, VS code</li>
+    </ul>
+    <h2 id="code-example">Code examples</h2>
+    <p>Move the first letter of each word to the end
+        of it, then add “ay” to the end of the word.
+        Leave punctuation marks untouched.
+    </p>
+    <pre>
+        <code>
+def pig_it(text):
+    words_list = text.split()
+    letters_list = [list(i) for i in words_list]
+    out = ''
+    for word in letters_list:
+        if ord(word[0]) > 64 or ord(word[0]) &lt; 32:
+            word.append(word[0] + 'ay')
+            word.pop(0)
+        out += ''.join(word) + ' '
+    return out[0:-1]
+        </code>
+    </pre>
+    <h2 id="experince">Experience</h2>
+    <ul>
+        <li><a href="https://rs.school/machine-learning/">RS Schools Course &laquo;ML-intro&raquo;</a></li>
+            <li><a href="https://rs.school/js/">RS Schools Course &laquo;JS/Frontend&raquo; (in progress)</a></li>
+    </ul>
+    <h2 id="education">Education</h2>
+    <ul>
+        <li>2019 - 2023 BSUIR, FCAD</li>
+    </ul>
+    <h2 id="english">English</h2>
+    <p>A2 (B1 in progress&hellip;)</p>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/egorvikh">Github</a></li>
+            <li><time datetime="2023-07-10">july, 2023</time></li>
+            <li><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="Rsschool logo" width="70" height="30"></a></li>
+        </ul>
+    </footer>
 </body>
 </html>

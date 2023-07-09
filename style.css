@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: Verdana, sans-serif;
+}
+.box {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    border: 2px solid #000;
+    margin: 30px;
+
+}
+
+.box img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%
+}
+
+.menu-background {
+    background-color: aquamarine;
+    width: 100%;
+    height: auto;
+}
+.main-menu {
+    text-align: center;
+}
+
+.main-menu li {
+    list-style-type: none;
+    display: inline;
+    margin: 2px;
+    font-size: 120%;
+}
+
+.contact span {
+    font-style: italic;
+}
+footer {
+    text-align: center;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+}
