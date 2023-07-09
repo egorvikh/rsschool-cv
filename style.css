@@ -40,3 +40,11 @@ body {
 .contact span {
     font-style: italic;
 }
+footer {
+    text-align: center;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+}
